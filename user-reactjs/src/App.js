@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Layout } from "antd"
+import { Content, Footer, Header } from "antd/es/layout/layout";
+import Navigation from "./components/Navigation"
+import FooterApp from "./components/FooterApp";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Products from "./pages/products/index"
+import Home from "./pages/Home/index"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Header>
+          <Navigation />
+        </Header>
+        <Content>
+          <Routes>
+            <Route path="/products" element={<Products />} />
+            <Route path="/" element={<Home />} />
+          </Routes>
+        </Content>
+        <Footer>
+          <FooterApp />
+        </Footer>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
