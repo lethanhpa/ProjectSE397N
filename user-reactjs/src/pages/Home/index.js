@@ -5,36 +5,6 @@ const index = () => {
     return (
         <>
             <body>
-                <section className=" top-txt ">
-                    <div className="head container ">
-                        <div className="head-txt ">
-                            <p>Free shipping, 30-day return or refund guarantee.</p>
-                        </div>
-                        <div className="sing_in_up ">
-                            <a href="# ">SIGN IN</a>
-                            <a href="# ">SIGN UP</a>
-                        </div>
-                    </div>
-                </section>
-                <nav className="navbar">
-                    <div className="navbar-container">
-                        <input type="checkbox" name="" id="checkbox" />
-                        <div className="hamburger-lines">
-                            <span className="line line1"></span>
-                            <span className="line line2"></span>
-                            <span className="line line3"></span>
-                        </div>
-                        <ul className="menu-items">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#sellers">Shop</a></li>
-                            <li><a href="#news">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                        <div className="logo">
-                            <img src="https://i.postimg.cc/TP6JjSTt/logo.webp" alt="" />
-                        </div>
-                    </div>
-                </nav>
                 <section id="home">
                     <div className="home_page ">
                         <div className="home_img ">
@@ -48,10 +18,10 @@ const index = () => {
                             </div>
                             <button><a href="#sellers">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
                             <div className="home_social_icons">
-                                <a href="#"><i className='bx bxl-facebook'></i></a>
-                                <a href="#"><i className='bx bxl-twitter'></i></a>
-                                <a href="#"><i className='bx bxl-pinterest'></i></a>
-                                <a href="#"><i className='bx bxl-instagram'></i></a>
+                                <a href="/"><i className='bx bxl-facebook'></i></a>
+                                <a href="/"><i className='bx bxl-twitter'></i></a>
+                                <a href="/"><i className='bx bxl-pinterest'></i></a>
+                                <a href="/"><i className='bx bxl-instagram'></i></a>
                             </div>
                         </div>
                     </div>
@@ -100,7 +70,7 @@ const index = () => {
                                         <i className='bx bx-star'></i>
                                     </div>
                                     <div className="price">
-                                        Price: 300$
+                                        Price: 3,620,149₫
                                         <div className="colors">
                                             <i className='bx bxs-circle red'></i>
                                             <i className='bx bxs-circle blue'></i>
@@ -108,7 +78,7 @@ const index = () => {
                                         </div>
                                     </div>
                                     <div className="buy-now">
-                                        <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                                        <button><a href="https://www.nike.com/vn/t/air-jordan-legacy-312-low-shoes-6Vd4Xl/CD7069-130">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -126,7 +96,7 @@ const index = () => {
                                         <i className='bx bx-star'></i>
                                     </div>
                                     <div className="price">
-                                        Price: 350$
+                                        Price: 3,365,149₫
                                         <div className="colors">
                                             <i className='bx bxs-circle green'></i>
                                             <i className='bx bxs-circle grey'></i>
@@ -134,12 +104,12 @@ const index = () => {
                                         </div>
                                     </div>
                                     <div className="buy-now">
-                                        <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                                        <button><a href="https://www.nike.com/vn/t/air-jordan-1-mid-se-shoes-CQ6f9G/DV1308-104">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
                             <div className="best-p1">
-                                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f2c837ca-7891-424f-8c2a-45146e581687/jumpman-two-trey-shoes-rhmBzG.png" alt="img" />
+                                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/1799bdd9-01f2-4faa-9e29-5eb5f0a15225/jordan-1-ko-shoes-RLJcHC.png" alt="img" />
                                 <div className="best-p1-txt">
                                     <div className="name-of-p">
                                         <p>Jordan 1 KO</p>
@@ -152,7 +122,7 @@ const index = () => {
                                         <i className='bx bx-star'></i>
                                     </div>
                                     <div className="price">
-                                        Price: 250$
+                                        Price: 4,109,000₫
                                         <div className="colors">
                                             <i className='bx bxs-circle brown'></i>
                                             <i className='bx bxs-circle green'></i>
@@ -160,7 +130,7 @@ const index = () => {
                                         </div>
                                     </div>
                                     <div className="buy-now">
-                                        <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                                        <button><a href="https://www.nike.com/vn/t/jordan-1-ko-shoes-RLJcHC/DO5047-100">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +148,7 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                     </div>
                                     <div className="price">
-                                        Price: 250$
+                                        Price: 4,409,000₫
                                         <div className="colors">
                                             <i className='bx bxs-circle red'></i>
                                             <i className='bx bxs-circle grey'></i>
@@ -186,7 +156,7 @@ const index = () => {
                                         </div>
                                     </div>
                                     <div className="buy-now">
-                                        <button><a href="https://codepen.io/sanketbodke/full/mdprZOq">Buy  Now</a></button>
+                                        <button><a href="https://www.nike.com/vn/t/jordan-why-not-6-pf-shoes-WvTHFW/DV1249-101">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -425,7 +395,7 @@ const index = () => {
                                 <div className="date-news1">
                                     <p><i className='bx bxs-calendar'></i> 12 February 2023</p>
                                     <h4>Nike Air Max Pulse</h4>
-                                    <a href="https://www.nike.com/vn/t/air-max-pulse-shoes-V9B1C5/FD6409-002" target="_blank">read more</a>
+                                    <a href="https://www.nike.com/vn/t/air-max-pulse-shoes-V9B1C5/FD6409-002">read more</a>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +407,7 @@ const index = () => {
                                 <div className="date-news2">
                                     <p><i className='bx bxs-calendar'></i> 17 February 2023</p>
                                     <h4>Nike Air Max 90</h4>
-                                    <a href="https://www.nike.com/vn/t/team-hustle-d-11-older-basketball-shoes-q4t8cZ/FJ7688-101" target="_blank">read more</a>
+                                    <a href="https://www.nike.com/vn/t/team-hustle-d-11-older-basketball-shoes-q4t8cZ/FJ7688-101" >read more</a>
                                 </div>
                             </div>
                         </div>
@@ -449,7 +419,7 @@ const index = () => {
                                 <div className="date-news3">
                                     <p><i className='bx bxs-calendar'></i> 26 February 2023</p>
                                     <h4>Nike Air Max 90</h4>
-                                    <a href="https://www.nike.com/vn/t/air-max-90-shoes-kRsBnD/DM0029-102" target="_blank">read more</a>
+                                    <a href="https://www.nike.com/vn/t/air-max-90-shoes-kRsBnD/DM0029-102" >read more</a>
                                 </div>
                             </div>
                         </div>
@@ -458,7 +428,7 @@ const index = () => {
                 <section id="contact">
                     <div className="contact container">
                         <div className="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.1068995708433!2d108.20716727527001!3d16.05994158461822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b4239d8e51%3A0x96e408c6b0419760!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBEdXkgVMOibg!5e0!3m2!1svi!2s!4v1684164960330!5m2!1svi!2s" width="600" height="450" style={{ allowFullScreen: "", loading: "lazy", referrerPolicy: "no-referrer-when-downgrade" }} />
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.1068995708433!2d108.20716727527001!3d16.05994158461822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b4239d8e51%3A0x96e408c6b0419760!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBEdXkgVMOibg!5e0!3m2!1svi!2s!4v1684164960330!5m2!1svi!2s" title='map' width="600" height="450" style={{ allowFullScreen: "", loading: "lazy", referrerPolicy: "no-referrer-when-downgrade" }} />
                         </div>
                         <form action="https://formspree.io/f/xzbowpjq" method="POST">
                             <div className="form">
@@ -482,43 +452,6 @@ const index = () => {
                         </form>
                     </div>
                 </section>
-                <footer>
-                    <div className="footer-container container">
-                        <div className="content_1">
-                            <img src="https://i.postimg.cc/htGyQ4JB/footer-logo.png" alt="logo" />
-                            <p>The customer is at the heart of our<br />unique business model, which includes<br />design.</p>
-                            <img src="https://i.postimg.cc/Nj9dgJ98/cards.png" alt="cards" />
-                        </div>
-                        <div className="content_2">
-                            <h4>SHOPPING</h4>
-                            <a href="#sellers">Clothing Store</a>
-                            <a href="#sellers">Trending Shoes</a>
-                            <a href="#sellers">Accessories</a>
-                            <a href="#sellers">Sale</a>
-                        </div>
-                        <div className="content_3">
-                            <h4>SHOPPING</h4>
-                            <a href="./contact.html">Contact Us</a>
-                            <a href="https://payment-method-sb.netlify.app/" target="_blank">Payment Method</a>
-                            <a href="https://delivery-status-sb.netlify.app/" target="_blank">Delivery</a>
-                            <a href="https://codepen.io/sandeshbodake/full/Jexxrv" target="_blank">Return and Exchange</a>
-                        </div>
-                        <div className="content_4">
-                            <h4>NEWLETTER</h4>
-                            <p>Be the first to know about new<br />arrivals, look books, sales &amp; promos!</p>
-                            <div className="f-mail">
-                                <input type="email" placeholder="Your Email" />
-                                <i className="bx bx-envelope" />
-                            </div>
-                            <hr />
-                        </div>
-                    </div>
-                    <div className="f-design">
-                        <div className="f-design-txt container">
-                            <p>Design and Code by code.sanket</p>
-                        </div>
-                    </div>
-                </footer>
             </body>
         </>
     );

@@ -1,24 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Products from "./pages/products/index"
+import Shop from "./pages/shop/index"
 import Home from "./pages/Home/index"
-import Login from "./pages/Auth/Login";
+import Auth from "./pages/Auth/index"
+import Navigation from "../src/components/Navigation"
+import FooterApp from "../src/components/FooterApp"
 
 function App() {
-  const [isLogin, setIsLogin] = useState(true);
-
   return (
     <>
-      {isLogin ? (
-        <BrowserRouter>
-          <Routes>
-            <Route path="/products" element={<Products />} />
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </BrowserRouter>
-      ) : (
-        <Login setIsLogin={setIsLogin} />
-      )}
+      <BrowserRouter>
+        <Navigation />
+        <Routes>
+          <Route path="/products" element={<Products />} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Auth" element={<Auth />} />
+        </Routes>
+        <FooterApp />
+      </BrowserRouter>
     </>
   );
 }
