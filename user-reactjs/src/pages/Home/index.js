@@ -6,9 +6,10 @@ const index = () => {
         <>
             <body>
                 <section id="home">
-                    <div className="home_page ">
-                        <div className="home_img ">
-                            <img src="https://static.nike.com/a/images/w_1423,c_limit/b05de187-a4ca-4f37-867b-b7f011d98cb6/nike-just-do-it.jpg" alt="img " />
+                    <div className="home_page">
+                        <div className="home_img">
+                            {/* <img src="https://static.nike.com/a/images/w_1423,c_limit/b05de187-a4ca-4f37-867b-b7f011d98cb6/nike-just-do-it.jpg" alt="img " /> */}
+                            <video id="video_background" autoPlay loop muted src="../../images/intro.mp4"></video>
                         </div>
                         <div className="home_txt ">
                             <p className="collectio ">SUMMER COLLECTION</p>
@@ -26,7 +27,6 @@ const index = () => {
                         </div>
                     </div>
                 </section>
-
                 <section id="collection">
                     <div className="collections container">
                         <div className="content">
@@ -430,7 +430,7 @@ const index = () => {
                         <div className="map">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.1068995708433!2d108.20716727527001!3d16.05994158461822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219b4239d8e51%3A0x96e408c6b0419760!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBEdXkgVMOibg!5e0!3m2!1svi!2s!4v1684164960330!5m2!1svi!2s" title='map' width="600" height="450" style={{ allowFullScreen: "", loading: "lazy", referrerPolicy: "no-referrer-when-downgrade" }} />
                         </div>
-                        <form action="https://formspree.io/f/xzbowpjq" method="POST">
+                        <form >
                             <div className="form">
                                 <div className="form-txt">
                                     <h4>INFORMATION</h4>

@@ -1,5 +1,117 @@
-.list-product .best-seller {
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.product-list {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.product-item {
+    max-width: 250px;
+    max-height: 370px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-title {
+    margin-top: 6px;
+    color: #9e3500;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product-price {
+    margin-top: 10px;
+}
+
+.product-button button {
+    max-width: max-content;
+    padding: 10px 15px;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #f05e8a;
+    color: var(--white);
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 1px solid #f05e8a;
+    transition: 0.5s;
+    color: white !important;
+}
+
+.product-button button:hover {
+    background-color: var(--white);
+    font-weight: 600;
+    color: #f05e8a !important;
+}
+
+@media (max-width: 500px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-button button {
+        padding: 6px 10px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 50px;
+    }
+
+    .product-button button {
+        padding: 5px 10px;
+    }
+
+    .product-price span {
+        font-size: 13px;
+    }
 }

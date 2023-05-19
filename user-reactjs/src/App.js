@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Products from "./pages/products/index"
 import Shop from "./pages/shop/index"
 import Home from "./pages/Home/index"
 import Auth from "./pages/Auth/index"
@@ -13,7 +12,6 @@ function App() {
       <BrowserRouter>
         <Navigation />
         <Routes>
-          <Route path="/products" element={<Products />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/" element={<Home />} />
           <Route path="/Auth" element={<Auth />} />

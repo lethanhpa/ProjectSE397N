@@ -20,19 +20,11 @@ const Navigation = () => {
                         <li><Link to="/shop">Shop <ShopOutlined /></Link></li>
                         <li><Link to="/contact">Contact <ContactsOutlined /></Link></li>
                         <li><Link to='/cart'>Cart <ShoppingCartOutlined /></Link></li>
+                        <li><Link to="/Auth">SIGN IN / SIGN UP</Link></li>
                     </ul>
                     <div className="logo">
                         <img style={{ width: '58px' }} src={logo} alt="logo" />
                     </div>
-                </div>
-                <div className="navbar-container">
-                    <ul className="menu-items">
-                        <Space>
-                            <Input />
-                            <SearchOutlined />
-                        </Space>
-                        <li><Link to="/Auth">SIGN IN / SIGN UP</Link></li>
-                    </ul>
                 </div>
             </nav>
         </>

@@ -262,6 +262,18 @@ body {
     -o-background-size: cover;
 }
 
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+}
+
 .home_txt {
     position: absolute;
     top: 37%;
@@ -978,6 +990,7 @@ footer {
     width: 100%;
     height: auto;
     background: #000;
+    margin-top: 50px;
 }
 
 .footer-container .content_1 img {
