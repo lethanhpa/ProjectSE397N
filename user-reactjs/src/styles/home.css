@@ -651,7 +651,6 @@ body {
 .seller .best-p1 {
     width: 250px;
     height: 370px;
-    /* border: 2px solid black; */
 }
 
 .seller .best-p1 img {
@@ -662,6 +661,12 @@ body {
 .seller .best-p1 .price {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.name-of-p {
+    padding-top: 15px;
 }
 
 .seller .best-p1 .price .colors input[type="radio"] {
@@ -821,7 +826,7 @@ body {
 .l-news1 {
     position: relative;
     width: 280px;
-    height: 320px;
+    height: 270px;
 }
 
 .l-news1 .news1-conte {
@@ -835,7 +840,7 @@ body {
 .l-news2 {
     position: relative;
     width: 280px;
-    height: 320px;
+    height: 270px;
 }
 
 .l-news2 .news2-conte {
@@ -849,7 +854,7 @@ body {
 .l-news3 {
     position: relative;
     width: 280px;
-    height: 320px;
+    height: 270px;
 }
 
 .l-news3 .news3-conte {

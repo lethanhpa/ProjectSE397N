@@ -16,25 +16,24 @@ const Index = () => {
 
         if (email === "user@gmail.com" && password === "123456") {
             alert("Login successful!!!");
-            window.location = "/"
+        } else if (email === "" && password === "") {
+            alert("No email or password entered");
         } else {
-            alert("Incorrect username or password");
+            alert("Enter the wrong email or password");
         }
     }
     return (
         <>
-            {/* Begin Login Content Area */}
             <div className="page-section mb-60">
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-12 col-lg-6">
-                            {/* Login Form s*/}
                             <form >
                                 <div className="login-form">
                                     <h4 className="login-title">Sign In</h4>
                                     <div className="row">
                                         <div className="col-md-12 col-12">
-                                            <label>Email Address*</label>
+                                            <label>Email Address</label>
                                             <input className="mb-2" type="email" placeholder="Email Address" value={email} onChange={handleEmailChange} />
                                         </div>
                                         <div className="col-12 mt-2">
@@ -70,16 +69,16 @@ const Index = () => {
                                             <input className="mb-2" type="text" placeholder="Last Name" />
                                         </div>
                                         <div className="col-md-12">
-                                            <label>Email Address*</label>
-                                            <input className="mb-2" type="email" placeholder="Email Address" />
+                                            <label>Email Address</label>
+                                            <input className="mb-2" type="email" placeholder="Email Address" required />
                                         </div>
                                         <div className="col-md-6">
                                             <label>Password</label>
-                                            <input className="mb-2" type="password" placeholder="Password" />
+                                            <input className="mb-2" type="password" placeholder="Password" required />
                                         </div>
                                         <div className="col-md-6">
                                             <label>Confirm Password</label>
-                                            <input className="mb-2" type="password" placeholder="Confirm Password" />
+                                            <input className="mb-2" type="password" placeholder="Confirm Password" required />
                                         </div>
                                         <div className="col-md-6">
                                             <label>Captcha</label>
@@ -92,7 +91,7 @@ const Index = () => {
                                                     span: 16,
                                                 }}>
                                                 <Button type="primary" htmlType="submit">
-                                                    Register
+                                                    Sign Up
                                                 </Button>
                                             </Form.Item>
                                         </div>
@@ -103,7 +102,6 @@ const Index = () => {
                     </div>
                 </div>
             </div>
-            {/* Login Content Area End Here */}
         </>
     );
 };

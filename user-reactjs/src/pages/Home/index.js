@@ -8,11 +8,11 @@ const index = () => {
                 <section id="home">
                     <div className="home_page">
                         <div className="home_img">
-                            {/* <img src="https://static.nike.com/a/images/w_1423,c_limit/b05de187-a4ca-4f37-867b-b7f011d98cb6/nike-just-do-it.jpg" alt="img " /> */}
-                            <video id="video_background" autoPlay loop muted src="../../images/intro.mp4"></video>
+                            <img src="https://static.nike.com/a/images/w_1423,c_limit/b05de187-a4ca-4f37-867b-b7f011d98cb6/nike-just-do-it.jpg" alt="img " />
+                            {/* <video id="video_background" autoPlay loop muted src="../../images/intro.mp4"></video> */}
                         </div>
                         <div className="home_txt ">
-                            <p className="collectio ">SUMMER COLLECTION</p>
+                            <p className="collection">SUMMER COLLECTION</p>
                             <h2>FALL - WINTER<br />Collection 2023</h2>
                             <div className="home_label">
                                 <p>A specialist label creating luxury essentials. Ethically crafted<br />with an unwavering commitment to exceptional quality.</p>
@@ -439,8 +439,8 @@ const index = () => {
                                         attention.</span>
                                     <h3>USA</h3>
                                     <p>195 E Parker Square Dr, Parker, CO 801<br />+43 982-314-0958</p>
-                                    <h3>India</h3>
-                                    <p>HW95+C9C, Lorem ipsum dolor sit.<br />411014</p>
+                                    <h3>Viet Nam</h3>
+                                    <p>254 Nguyen Van Linh, Thach Gian, Thanh Khe, Da Nang<br />+84 337-219-023</p>
                                 </div>
                                 <div className="form-details">
                                     <input type="text" name="name" id="name" placeholder="Name" required />

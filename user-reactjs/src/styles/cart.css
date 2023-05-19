@@ -1,0 +1,265 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+select,
+textarea {
+    background-color: transparent;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.cart {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 36px;
+}
+
+.cart-left-wrap {
+    width: 65%;
+    padding: 0 10px;
+}
+
+.cart-right-wrap {
+    width: 35%;
+    padding: 0 10px;
+}
+
+.cart-title {
+    color: rgb(17 17 17);
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 33px;
+    margin-bottom: 10px;
+}
+
+.cart-left-list {
+    font-size: 16px;
+}
+
+.cart-left-item {
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.card-wrap-info {
+    display: flex;
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+}
+
+.cart-item-wrap {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-product-img {
+    margin-right: 30px;
+}
+
+.cart-product-img img {
+    width: 100%;
+    width: 180px;
+    min-width: 180px;
+}
+
+.cart-product-name {
+    color: #000;
+}
+
+.card-product-type,
+.card-product-color {
+    color: #757575;
+}
+
+.sizeQty {
+    display: flex;
+    align-items: center;
+    color: #757575;
+}
+
+.sizeQty select {
+    margin-left: 10px;
+    color: #757575;
+    border: none;
+    font-size: 14px;
+}
+
+.cart-product-price span {
+    font-size: 18px;
+}
+
+.card-icon .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    padding-top: 6px;
+}
+
+.card-right-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-right-text:last-child {
+    padding: 16px 0px;
+    line-height: 0px !important;
+    border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.card-right-text span,
+.card-right-text p {
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 28px;
+    color: #111;
+}
+
+/* 
+.card-right-content {
+  
+} */
+
+.cart-left-bonus {
+    margin-top: 24px;
+}
+
+.cart-left-bonus p {
+    color: #111111;
+    flex-basis: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.bonus-bottom span {
+    text-decoration: underline;
+    color: #757575;
+}
+
+.card-right-button {
+    margin-top: 36px;
+}
+
+.card-right-button button {
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.card-right-button button:hover,
+.button-layout button:hover {
+    background: rgba(0, 0, 0, 0.75);
+    transition: 1s linear;
+}
+
+.button-layout {
+    display: block;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    padding: 16px 12px;
+    box-shadow: rgb(229, 229, 229) 0px 1px 0px 0px inset;
+}
+
+.button-layout button {
+    display: none;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 18px 24px;
+    border-radius: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    line-height: 1.5;
+}
+
+@media (max-width: 930px) {
+    .button-layout button {
+        display: block;
+    }
+
+    .cart {
+        display: block;
+    }
+
+    .cart-left-wrap,
+    .cart-right-wrap {
+        width: 100%;
+    }
+
+    .cart-right-wrap {
+        margin-top: 20px;
+    }
+
+    .card-right-button {
+        display: none;
+    }
+
+    .cart-left-bonus {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .cart-product-img img {
+        width: 96px;
+        min-width: 96px;
+    }
+
+    .cart-item-wrap {
+        max-width: 400px;
+    }
+
+    .card-wrap-info {
+        font-size: 14px;
+    }
+
+    .cart-product-price span {
+        font-size: 14px;
+    }
+}
