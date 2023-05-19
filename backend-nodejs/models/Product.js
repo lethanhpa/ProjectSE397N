@@ -17,8 +17,6 @@ const productSchema = Schema(
     stock: { type: Number, min: 0, default: 0 },
     description: { type: String, required: true },
     img: { type: String },
-    categoryId: { type: Schema.Types.ObjectId, ref: 'Category', required: false },
-    supplierId: { type: Schema.Types.ObjectId, ref: 'Supplier', required: false },
     slug: {
       type: String,
       slug: 'name',
@@ -37,21 +35,6 @@ productSchema.pre("create", function (next) {
 // Virtuals
 productSchema.virtual('total').get(function () {
   return (this.price * (100 - this.discount)) / 100;
-});
-
-// Virtual with Populate
-productSchema.virtual('category', {
-  ref: 'Category',
-  localField: 'categoryId',
-  foreignField: '_id',
-  justOne: true,
-});
-
-productSchema.virtual('supplier', {
-  ref: 'Supplier',
-  localField: 'supplierId',
-  foreignField: '_id',
-  justOne: true,
 });
 
 // Include virtuals

@@ -16,14 +16,9 @@ const { passportConfigEmployee, passportConfigCustomer, passportConfigLocal } = 
 // const indexRouter = require('./routes/index');
 // const usersRouter = require('./routes/users');
 const productsRouter = require('./routes/products');
-const categoriesRouter = require('./routes/categories');
 const customersRouter = require('./routes/customers');
 const employeesRouter = require('./routes/employees');
-const suppliersRouter = require('./routes/suppliers');
 const ordersRouter = require('./routes/orders');
-const questionsRouter = require('./routes/questions');
-
-const uploadRouter = require('./routes/upload');
 
 const app = express();
 
@@ -66,14 +61,10 @@ passport.use(passportConfigLocal);
 // app.use('/', indexRouter);
 // app.use('/users', usersRouter);
 app.use('/products', productsRouter);
-app.use('/categories', categoriesRouter);
 app.use('/customers', customersRouter);
 app.use('/employees', employeesRouter);
-app.use('/suppliers', suppliersRouter);
 app.use('/orders', ordersRouter);
-app.use('/questions', questionsRouter);
 
-app.use('/upload', uploadRouter);
 
 app.get('/chat', (req, res) => {
   res.sendFile(__dirname + '/index.html')

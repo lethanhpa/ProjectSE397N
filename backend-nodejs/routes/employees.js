@@ -7,7 +7,6 @@ const { Employee } = require('../models');
 const {
   validateSchema,
   loginSchema,
-  categorySchema,
 } = require('../validation/employee');
 const encodeToken = require('../helpers/jwtHelper');
 

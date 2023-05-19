@@ -22,16 +22,8 @@ const loginSchema = yup.object({
   params: yup.object({}),
 });
 
-const categorySchema = yup.object().shape({
-  params: yup.object({
-    id: yup.string().test('Validate ObjectID', '${path} is not valid ObjectID', (value) => {
-      return ObjectId.isValid(value);
-    }),
-  }),
-});
 
 module.exports = {
   validateSchema,
   loginSchema,
-  categorySchema,
 };

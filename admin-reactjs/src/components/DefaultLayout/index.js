@@ -4,8 +4,6 @@ import {
     HomeOutlined,
     FileDoneOutlined,
     DropboxOutlined,
-    FileTextOutlined,
-    IdcardOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
 import { useNavigate } from 'react-router-dom';
@@ -38,17 +36,6 @@ const items = [
         key: 'manageProducts',
         icon: <DropboxOutlined />,
     },
-    {
-        label: 'Manager Categories',
-        key: 'manageCategories',
-        icon: <FileTextOutlined />,
-    },
-    {
-        label: 'Manager Supplier',
-        key: 'manageSuppliers',
-        icon: <IdcardOutlined />,
-    },
-
 ];
 
 export default function DefaultLayout({ children }) {

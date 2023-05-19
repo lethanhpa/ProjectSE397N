@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Button, Space, Table, message, Form, Modal, Input, Select, InputNumber, Pagination, Drawer, Popconfirm } from 'antd';
+import React, { useState } from 'react'
+import { Button, Space, Table, message, Form, Modal, Input, InputNumber, Pagination, Drawer, Popconfirm } from 'antd';
 import { DeleteOutlined, EditOutlined, UnorderedListOutlined, FilterOutlined, ClearOutlined, SearchOutlined } from "@ant-design/icons";
 import axios from "../../libraries/axiosClient.js";
 import numeral from "numeral";
@@ -12,8 +12,6 @@ export default function ManageProducts() {
     const [showTable, setShowTable] = useState(true);
     const [updateForm] = Form.useForm();
     const [createForm] = Form.useForm();
-    const [categories, setCategories] = useState([]);
-    const [suppliers, setSuppliers] = useState([]);
     const [openFilter, setOpenFilter] = useState(false);
     const [skip, setSkip] = useState(0);
     const [total, setTotal] = useState(0);
@@ -23,8 +21,6 @@ export default function ManageProducts() {
     const [discountStartSearch, setDiscountStartSearch] = useState("");
     const [stockEndSearch, setStockEndSearch] = useState("");
     const [stockStartSearch, setStockStartSearch] = useState("");
-    const [categorySearch, setCategorySearch] = useState("");
-    const [supplierSearch, setSupplierSearch] = useState("");
     const [dataSearch, setDataSearch] = useState({});
     const [nameSearch, setNameSearch] = useState("");
     const [open, setOpen] = useState(false);
@@ -33,8 +29,6 @@ export default function ManageProducts() {
 
     const onClearSearch = () => {
         setNameSearch("");
-        setSupplierSearch("");
-        setCategorySearch("");
         setPriceStartSearch("");
         setPriceEndSearch("");
         setDiscountEndSearch("");
@@ -46,8 +40,6 @@ export default function ManageProducts() {
     const onSearch = () => {
         if (
             nameSearch === "" &&
-            categorySearch === "" &&
-            supplierSearch === "" &&
             stockStartSearch === "" &&
             stockEndSearch === "" &&
             priceStartSearch === "" &&
@@ -59,9 +51,6 @@ export default function ManageProducts() {
         }
         setDataSearch({
             ...(nameSearch !== "" && { productName: nameSearch }),
-            ...(categorySearch !== "" && { category: categorySearch }),
-            ...(supplierSearch !== "" && { supplier: supplierSearch }),
-            ...(supplierSearch !== "" && { supplier: supplierSearch }),
             ...(stockStartSearch !== "" && { stockStart: stockStartSearch }),
             ...(stockEndSearch !== "" && { stockEnd: stockEndSearch }),
             ...(priceStartSearch !== "" && { priceStart: priceStartSearch }),
@@ -80,32 +69,6 @@ export default function ManageProducts() {
     const showDrawer = () => {
         setOpenFilter(true);
     };
-
-    // Get categories
-    useEffect(() => {
-        axios
-            .get("/categories")
-            .then((response) => {
-                const { data } = response;
-                setCategories(data);
-            })
-            .catch((err) => {
-                console.error(err);
-            });
-    }, [refresh]);
-
-    // Get suppliers
-    useEffect(() => {
-        axios
-            .get("/suppliers")
-            .then((response) => {
-                const { data } = response;
-                setSuppliers(data);
-            })
-            .catch((err) => {
-                console.error(err);
-            });
-    }, [refresh]);
 
     // Get products
     React.useEffect(() => {
@@ -190,45 +153,6 @@ export default function ManageProducts() {
                             span: 16,
                         }}
                     >
-                        <Form.Item
-                            label="Category"
-                            name="categoryId"
-                            hasFeedback
-                            required={true}
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Required to choose",
-                                },
-                            ]}
-                        >
-                            <Select
-                                style={{ width: "100%" }}
-                                options={categories.map((c) => {
-                                    return { value: c._id, label: c.name };
-                                })}
-                            />
-                        </Form.Item>
-
-                        <Form.Item
-                            label="Supplier"
-                            name="supplierId"
-                            hasFeedback
-                            required={true}
-                            rules={[
-                                {
-                                    required: true,
-                                    message: "Required to choose",
-                                },
-                            ]}
-                        >
-                            <Select
-                                style={{ width: "100%" }}
-                                options={suppliers.map((c) => {
-                                    return { value: c._id, label: c.name };
-                                })}
-                            />
-                        </Form.Item>
                         <Form.Item
                             label="Name"
                             name="name"
@@ -339,40 +263,7 @@ export default function ManageProducts() {
                                     }}
                                 />
                             </Form.Item>
-                            <Form.Item
-                                label="Category"
-                                name="category"
-                                hasFeedback={categorySearch === "" ? false : true}
-                                valuePropName={categorySearch}
-                            >
-                                <Select
-                                    onChange={(value) => {
-                                        setCategorySearch(value);
-                                    }}
-                                    value={categorySearch}
-                                    style={{ width: "100%" }}
-                                    options={categories.map((c) => {
-                                        return { value: c._id, label: c.name };
-                                    })}
-                                />
-                            </Form.Item>
-                            <Form.Item
-                                label="Supplier"
-                                name="supplier"
-                                hasFeedback={supplierSearch === "" ? false : true}
-                                valuePropName={supplierSearch}
-                            >
-                                <Select
-                                    style={{ width: "100%" }}
-                                    onChange={(value) => {
-                                        setSupplierSearch(value);
-                                    }}
-                                    value={supplierSearch}
-                                    options={suppliers.map((c) => {
-                                        return { value: c._id, label: c.name };
-                                    })}
-                                />
-                            </Form.Item>
+
                             <Form.Item label="Stock">
                                 <Space>
                                     <InputNumber
@@ -459,18 +350,12 @@ export default function ManageProducts() {
                         <Column title="Image" dataIndex="img" key="img"
                             render={(_text, record) => {
                                 return (
-                                    <img src={record.img} style={{ width: "130px", height: "auto" }} />
+                                    <img src={record.img} style={{ width: "130px", height: "auto" }} alt='' />
                                 );
                             }} />
                         <Column title="Discount" dataIndex="discount" key="discount" />
                         <Column title="Stock" dataIndex="stock" key="stock" />
                         <Column title="Description" dataIndex="description" key="description" />
-                        <Column title="Categories" dataIndex="category.name" key="category.name" render={(_text, record) => {
-                            return <span>{record.category.name}</span>;
-                        }} />
-                        <Column title="Suppliers" dataIndex="supplier.name" key="supplier.name" render={(_text, record) => {
-                            return <span>{record.supplier.name}</span>;
-                        }} />
                         <Column
                             title="Action"
                             key="action"
@@ -539,45 +424,6 @@ export default function ManageProducts() {
                                 span: 16,
                             }}
                         >
-                            <Form.Item
-                                label="Category"
-                                name="categoryId"
-                                hasFeedback
-                                required={true}
-                                rules={[
-                                    {
-                                        required: true,
-                                        message: "Required to choose",
-                                    },
-                                ]}
-                            >
-                                <Select
-                                    style={{ width: "100%" }}
-                                    options={categories.map((c) => {
-                                        return { value: c._id, label: c.name };
-                                    })}
-                                />
-                            </Form.Item>
-
-                            <Form.Item
-                                label="Supplier"
-                                name="supplierId"
-                                hasFeedback
-                                required={true}
-                                rules={[
-                                    {
-                                        required: true,
-                                        message: "Required to choose",
-                                    },
-                                ]}
-                            >
-                                <Select
-                                    style={{ width: "100%" }}
-                                    options={suppliers.map((c) => {
-                                        return { value: c._id, label: c.name };
-                                    })}
-                                />
-                            </Form.Item>
                             <Form.Item
                                 label="Name"
                                 name="name"

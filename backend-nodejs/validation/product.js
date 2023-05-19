@@ -16,10 +16,6 @@ const validateSchema = (schema) => async (req, res, next) => {
 
 const getProductsSchema = yup.object({
   query: yup.object({
-    category: yup.string().test('Validate ObjectID', '${path} is not valid ObjectID', (value) => {
-      if (!value) return true;
-      return ObjectId.isValid(value);
-    }),
     sup: yup.string().test('Validate ObjectID', '${path} is not valid ObjectID', (value) => {
       if (!value) return true;
       return ObjectId.isValid(value);
