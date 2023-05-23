@@ -393,7 +393,7 @@ const index = () => {
                             </div>
                             <div className="news1-conte">
                                 <div className="date-news1">
-                                    <p><i className='bx bxs-calendar'></i> 12 February 2023</p>
+                                    <p><i className='bx bxs-calendar'></i> 12 November 2023</p>
                                     <h4>Nike Air Max Pulse</h4>
                                     <a href="https://www.nike.com/vn/t/air-max-pulse-shoes-V9B1C5/FD6409-002">read more</a>
                                 </div>
@@ -405,7 +405,7 @@ const index = () => {
                             </div>
                             <div className="news2-conte">
                                 <div className="date-news2">
-                                    <p><i className='bx bxs-calendar'></i> 17 February 2023</p>
+                                    <p><i className='bx bxs-calendar'></i> 17 November 2023</p>
                                     <h4>Nike Air Max 90</h4>
                                     <a href="https://www.nike.com/vn/t/team-hustle-d-11-older-basketball-shoes-q4t8cZ/FJ7688-101" >read more</a>
                                 </div>
@@ -417,7 +417,7 @@ const index = () => {
                             </div>
                             <div className="news3-conte">
                                 <div className="date-news3">
-                                    <p><i className='bx bxs-calendar'></i> 26 February 2023</p>
+                                    <p><i className='bx bxs-calendar'></i> 26 November 2023</p>
                                     <h4>Nike Air Max 90</h4>
                                     <a href="https://www.nike.com/vn/t/air-max-90-shoes-kRsBnD/DM0029-102" >read more</a>
                                 </div>

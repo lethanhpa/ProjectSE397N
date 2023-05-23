@@ -85,8 +85,7 @@ const Index = () => {
                                     </div>
                                 </div>
                                 <div className="card-right-button">
-                                    <button>Guest Checkout</button>
-                                    <button>Member Checkout</button>
+                                    <button>Buy Now</button>
                                 </div>
                             </div>
                         </div>

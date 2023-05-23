@@ -13,11 +13,8 @@ const Index = () => {
     };
     const handleLogin = (e) => {
         e.preventDefault();
-
+        window.location = "/cart";
         if (email === "user@gmail.com" && password === "123456") {
-            alert("Login successful!!!");
-        } else if (email === "" && password === "") {
-            alert("No email or password entered");
         } else {
             alert("Enter the wrong email or password");
         }
