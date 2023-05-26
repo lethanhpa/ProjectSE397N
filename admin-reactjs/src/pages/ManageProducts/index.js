@@ -97,7 +97,7 @@ export default function ManageProducts() {
             .then((_response) => {
                 setRefresh((f) => f + 1);
                 createForm.resetFields();
-                message.success("New added successfully!", 1.5);
+                message.success("Thêm mới thành công!", 1.5);
                 setShowTable(true);
             })
             .catch((err) => {
@@ -111,7 +111,7 @@ export default function ManageProducts() {
             .then((_response) => {
                 setRefresh((f) => f + 1);
                 updateForm.resetFields();
-                message.success("Update successfully!", 1.5);
+                message.success("Cập nhật thành công!", 1.5);
                 setOpen(false);
             })
             .catch((err) => {
@@ -123,8 +123,8 @@ export default function ManageProducts() {
         setOpenFilter(false);
     };
 
-    const text = 'Are you sure you want to delete?';
-    const description = 'Delete the it';
+    const text = 'Bạn có chắc chắn muốn xóa không?';
+    const description = 'Nếu xóa đi sẽ không thể khôi phục lại';
 
     return (
         <div style={{ padding: "24px 24px 24px", textAlign: "left" }}>
@@ -142,7 +142,7 @@ export default function ManageProducts() {
                     <h1 style={{ fontSize: "32px", textAlign: "center" }}>ADD LIST</h1>
                     {/* CREAT FORM */}
                     <Form
-                        style={{ paddingTop: "24px", width: "80%" }}
+                        style={{ paddingTop: "12px", width: "80%" }}
                         form={createForm}
                         name="create-form"
                         onFinish={onFinish}
@@ -154,48 +154,48 @@ export default function ManageProducts() {
                         }}
                     >
                         <Form.Item
-                            label="Name"
+                            label="Tên sản phẩm"
                             name="name"
                             hasFeedback
                             required={true}
                             rules={[
                                 {
                                     required: true,
-                                    message: "Input required",
+                                    message: "Bắt buộc phải nhập",
                                 },
                             ]}
                         >
                             <Input />
                         </Form.Item>
 
-                        <Form.Item label="Image" name="img">
+                        <Form.Item label="Ảnh" name="img">
                             <Input />
                         </Form.Item>
 
                         <Form.Item
-                            label="Price"
+                            label="Giá"
                             name="price"
                             hasFeedback
                             required={true}
                             rules={[
                                 {
                                     required: true,
-                                    message: "Input to required",
+                                    message: "Bắt buộc phải nhập",
                                 },
                             ]}
                         >
                             <InputNumber min={0} style={{ width: 350 }} />
                         </Form.Item>
 
-                        <Form.Item label="Discount" name="discount" hasFeedback>
-                            <InputNumber min={0} max={99} style={{ width: 350 }} />
+                        <Form.Item label="Giảm giá" name="discount" hasFeedback>
+                            <InputNumber min={0} max={75} style={{ width: 350 }} />
                         </Form.Item>
 
-                        <Form.Item label="Stock" name="stock" hasFeedback>
+                        <Form.Item label="Tồn kho" name="stock" hasFeedback>
                             <InputNumber min={0} style={{ width: 350 }} />
                         </Form.Item>
 
-                        <Form.Item label="Description" name="description" hasFeedback>
+                        <Form.Item label="Mô tả / Ghi chú" name="description" hasFeedback>
                             <Input style={{ width: 350 }} />
                         </Form.Item>
 
@@ -206,7 +206,7 @@ export default function ManageProducts() {
                             }}
                         >
                             <Button type="primary" htmlType="submit" style={{ width: "140px", height: "35px", fontSize: "18px" }}>
-                                Submit
+                                Thêm
                             </Button>
                         </Form.Item>
                     </Form>
@@ -251,7 +251,7 @@ export default function ManageProducts() {
                             }}
                         >
                             <Form.Item
-                                label="Name"
+                                label="Tên sản phẩm"
                                 name="name"
                                 hasFeedback={nameSearch === "" ? false : true}
                                 valuePropName={nameSearch}
@@ -264,7 +264,7 @@ export default function ManageProducts() {
                                 />
                             </Form.Item>
 
-                            <Form.Item label="Stock">
+                            <Form.Item label="Tồn kho">
                                 <Space>
                                     <InputNumber
                                         min={0}
@@ -286,14 +286,14 @@ export default function ManageProducts() {
                                 </Space>
                             </Form.Item>
 
-                            <Form.Item label="Price">
+                            <Form.Item label="Giá">
                                 <Space>
                                     <InputNumber
                                         min={0}
                                         onChange={(value) => {
                                             setPriceStartSearch(value);
                                         }}
-                                        placeholder="From..."
+                                        placeholder="Từ..."
                                         value={priceStartSearch}
                                     />
                                     <InputNumber
@@ -301,13 +301,13 @@ export default function ManageProducts() {
                                         onChange={(value) => {
                                             setPriceEndSearch(value);
                                         }}
-                                        placeholder="To..."
+                                        placeholder="Đến..."
                                         value={priceEndSearch}
                                     />
                                 </Space>
                             </Form.Item>
 
-                            <Form.Item label="Discount">
+                            <Form.Item label="Giảm giá">
                                 <Space>
                                     <InputNumber
                                         min={0}
@@ -315,7 +315,7 @@ export default function ManageProducts() {
                                             setDiscountStartSearch(value);
                                         }}
                                         value={discountStartSearch}
-                                        placeholder="From..."
+                                        placeholder="Từ..."
                                     />
                                     <InputNumber
                                         max={99}
@@ -324,7 +324,7 @@ export default function ManageProducts() {
                                             setDiscountEndSearch(value);
                                         }}
                                         value={discountEndSearch}
-                                        placeholder="To..."
+                                        placeholder="Đến..."
                                     />
                                 </Space>
                             </Form.Item>
@@ -343,19 +343,19 @@ export default function ManageProducts() {
                     </Drawer>
                     <h1 style={{ fontSize: "32px", textAlign: "center" }}>LIST</h1>
                     <Table dataSource={data} rowKey="id" pagination={false}>
-                        <Column title="Name" dataIndex="name" key="name" />
-                        <Column title="Price" dataIndex="price" key="price" render={(text) => {
-                            return <span>{numeral(text).format("0,0")}</span>;
+                        <Column title="Tên sản phẩm" dataIndex="name" key="name" />
+                        <Column title="Giá" dataIndex="price" key="price" render={(text) => {
+                            return <span>{numeral(text).format("0,0")}đ</span>;
                         }} />
-                        <Column title="Image" dataIndex="img" key="img"
+                        <Column title="Ảnh" dataIndex="img" key="img"
                             render={(_text, record) => {
                                 return (
                                     <img src={record.img} style={{ width: "130px", height: "auto" }} alt='' />
                                 );
                             }} />
-                        <Column title="Discount" dataIndex="discount" key="discount" />
-                        <Column title="Stock" dataIndex="stock" key="stock" />
-                        <Column title="Description" dataIndex="description" key="description" />
+                        <Column title="Giảm giá" dataIndex="discount" key="discount" />
+                        <Column title="Tồn khko" dataIndex="stock" key="stock" />
+                        <Column title="Mô tả / Ghi chú" dataIndex="description" key="description" />
                         <Column
                             title="Action"
                             key="action"
@@ -370,7 +370,7 @@ export default function ManageProducts() {
                                             setUpdateId(record._id);
                                             updateForm.setFieldsValue(record);
                                         }}
-                                    >Edit</Button>
+                                    >Sửa</Button>
 
                                     <Popconfirm
                                         placement="topRight"
@@ -379,16 +379,16 @@ export default function ManageProducts() {
                                         onConfirm={() => {
                                             axios.delete(apiName + "/" + record.id).then(() => {
                                                 setRefresh((f) => f + 1);
-                                                message.success("Delete successfully!", 1.5);
+                                                message.success("Xóa thành công!", 1.5);
                                             });
                                         }}
-                                        okText="Yes"
-                                        cancelText="No"
+                                        okText="Có"
+                                        cancelText="Không"
                                     >
                                         <Button
                                             danger
                                             icon={<DeleteOutlined />}
-                                        >Delete</Button>
+                                        >Xóa</Button>
                                     </Popconfirm>
                                 </Space>
                             )}
@@ -403,12 +403,12 @@ export default function ManageProducts() {
                     {/* EDIT FORM */}
                     <Modal
                         open={open}
-                        title="Update"
+                        title="Bảng cập nhật"
                         onCancel={() => {
                             setOpen(false);
                         }}
-                        cancelText="Close"
-                        okText="Submit"
+                        cancelText="Đóng"
+                        okText="Cập nhật"
                         onOk={() => {
                             updateForm.submit();
                         }}
@@ -425,26 +425,26 @@ export default function ManageProducts() {
                             }}
                         >
                             <Form.Item
-                                label="Name"
+                                label="Tên sản phẩm"
                                 name="name"
                                 hasFeedback
                                 required={true}
                                 rules={[
                                     {
                                         required: true,
-                                        message: "Input to required",
+                                        message: "Bắt buộc phải nhập",
                                     },
                                 ]}
                             >
                                 <Input />
                             </Form.Item>
 
-                            <Form.Item label="Image" name="img">
+                            <Form.Item label="Ảnh" name="img">
                                 <Input />
                             </Form.Item>
 
                             <Form.Item
-                                label="Price"
+                                label="Giá"
                                 name="price"
                                 hasFeedback
                                 required={true}
@@ -458,15 +458,15 @@ export default function ManageProducts() {
                                 <InputNumber min={0} style={{ width: 250 }} />
                             </Form.Item>
 
-                            <Form.Item label="Discount" name="discount" hasFeedback>
+                            <Form.Item label="Giảm giá" name="discount" hasFeedback>
                                 <InputNumber min={0} max={99} style={{ width: 250 }} />
                             </Form.Item>
 
-                            <Form.Item label="Stock" name="stock" hasFeedback>
+                            <Form.Item label="Tồn kho" name="stock" hasFeedback>
                                 <InputNumber min={0} style={{ width: 250 }} />
                             </Form.Item>
 
-                            <Form.Item label="Description" name="description" hasFeedback>
+                            <Form.Item label="Mô tả / Ghi chú" name="description" hasFeedback>
                                 <Input style={{ width: 250 }} />
                             </Form.Item>
                         </Form>

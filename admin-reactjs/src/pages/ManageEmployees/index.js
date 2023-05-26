@@ -22,12 +22,12 @@ export default function ManageEmployees() {
     return (
         <div>
             <Table dataSource={data} rowKey="_id">
-                <Column title="First Name" dataIndex="firstName" key="firstName" />
-                <Column title="Last Name" dataIndex="lastName" key="lastName" />
+                <Column title="Họ" dataIndex="lastName" key="lastName" />
+                <Column title="Tên" dataIndex="firstName" key="firstName" />
                 <Column title="Email" dataIndex="email" key="email" />
-                <Column title="Birthday" dataIndex="birthday" key="birthday" />
-                <Column title="Phone Number" dataIndex="phoneNumber" key="phoneNumber" />
-                <Column title="Address" dataIndex="address" key="address" />
+                <Column title="Ngày sinh" dataIndex="birthday" key="birthday" />
+                <Column title="Số điện thoại" dataIndex="phoneNumber" key="phoneNumber" />
+                <Column title="Địa chỉ" dataIndex="address" key="address" />
                 <Column
                     title="Action"
                     key="action"

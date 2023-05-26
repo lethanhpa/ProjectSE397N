@@ -16,10 +16,10 @@ const Navigation = () => {
                     </div>
                     <ul className="menu-items">
                         <li><Link to="/">Home <HomeOutlined /></Link></li>
-                        <li><Link to="/shop">Shop <ShopOutlined /></Link></li>
-                        <li><a href='#contact'>Contact <ContactsOutlined /></a></li>
+                        <li><Link to="/products">Products <ShopOutlined /></Link></li>
+                        <li><a href='/#contact'>Contact <ContactsOutlined /></a></li>
                         <li><Link to='/cart'>Cart <ShoppingCartOutlined /></Link></li>
-                        <li><Link to="/Auth">SIGN IN / SIGN UP</Link></li>
+                        <li><Link to="/auth">SIGN IN / SIGN UP</Link></li>
                     </ul>
                     <div className="logo">
                         <img style={{ width: '58px' }} src={logo} alt="logo" />

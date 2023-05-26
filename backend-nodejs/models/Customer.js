@@ -38,7 +38,11 @@ const customerSchema = new Schema({
   },
   address: { type: String, required: true },
   birthday: { type: Date },
-});
+},
+  {
+    versionKey: false,
+    timestamps: true,
+  });
 
 // Virtuals
 customerSchema.virtual('fullName').get(function () {

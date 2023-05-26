@@ -17,7 +17,7 @@ const index = () => {
                             <div className="home_label">
                                 <p>A specialist label creating luxury essentials. Ethically crafted<br />with an unwavering commitment to exceptional quality.</p>
                             </div>
-                            <button><a href="#sellers">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
+                            <button><a href="/Shop">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
                             <div className="home_social_icons">
                                 <a href="/"><i className='bx bxl-facebook'></i></a>
                                 <a href="/"><i className='bx bxl-twitter'></i></a>
@@ -33,28 +33,28 @@ const index = () => {
                             <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/650de059-d5d8-4372-8e07-072b3040ba69/air-jordan-1-mid-se-shoes-p48zQ5.png" alt="img" />
                             <div className="img-content">
                                 <p>Collections</p>
-                                <button><a href="#sellers">SHOP NOW</a></button>
+                                <button><a href="/Shop">SHOP NOW</a></button>
                             </div>
                         </div>
                         <div className="content2">
                             <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/42cba1bc-3a7b-44df-a026-3c416d1d80b2/tatum-1-st-louis-pf-basketball-shoes-LDFvBJ.png" alt="img" />
                             <div className="img-content2">
                                 <p>Shoes Spring</p>
-                                <button><a href="#sellers">SHOP NOW</a></button>
+                                <button><a href="/Shop">SHOP NOW</a></button>
                             </div>
                         </div>
                         <div className="content3">
                             <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e5feafbc-8beb-4b91-9ffd-ed14a62e1a67/zion-2-pf-basketball-shoes-CH06Hd.png" alt="img" />
                             <div className="img-content3">
                                 <p>Accessories</p>
-                                <button><a href="#sellers">SHOP NOW</a></button>
+                                <button><a href="/Shop">SHOP NOW</a></button>
                             </div>
                         </div>
                     </div>
                 </section>
                 <section id="sellers">
                     <div className="seller container">
-                        <h2>Top Sales</h2>
+                        <h2>Top Sell</h2>
                         <div className="best-seller">
                             <div className="best-p1">
                                 <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5a2e1902-2da3-4fe7-9412-a7ebdfef25c1/air-jordan-legacy-312-low-shoes-6Vd4Xl.png" alt="img" />
@@ -68,17 +68,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bx-star'></i>
                                         <i className='bx bx-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        Price: 3,620,149₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle red'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                            <i className='bx bxs-circle white'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-jordan-legacy-312-low-shoes-6Vd4Xl/CD7069-130">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -95,17 +84,6 @@ const index = () => {
                                         <i className='bx bx-star'></i>
                                         <i className='bx bx-star'></i>
                                     </div>
-                                    <div className="price">
-                                        Price: 3,365,149₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle green'></i>
-                                            <i className='bx bxs-circle grey'></i>
-                                            <i className='bx bxs-circle brown'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-jordan-1-mid-se-shoes-CQ6f9G/DV1308-104">Buy  Now</a></button>
-                                    </div>
                                 </div>
                             </div>
                             <div className="best-p1">
@@ -121,17 +99,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bx-star'></i>
                                     </div>
-                                    <div className="price">
-                                        Price: 4,109,000₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle brown'></i>
-                                            <i className='bx bxs-circle green'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/jordan-1-ko-shoes-RLJcHC/DO5047-100">Buy  Now</a></button>
-                                    </div>
                                 </div>
                             </div>
                             <div className="best-p1">
@@ -146,17 +113,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        Price: 4,409,000₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle red'></i>
-                                            <i className='bx bxs-circle grey'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/jordan-why-not-6-pf-shoes-WvTHFW/DV1249-101">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -178,17 +134,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                     </div>
-                                    <div className="price">
-                                        Price: 2,679,000₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle blank'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                            <i className='bx bxs-circle brown'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-lv8-2-older-shoes-Wtv7F1/DX1656-800">Buy  Now</a></button>
-                                    </div>
                                 </div>
                             </div>
                             <div className="best-p1">
@@ -203,17 +148,6 @@ const index = () => {
                                         <i className='bx bx-star'></i>
                                         <i className='bx bx-star'></i>
                                         <i className='bx bx-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        Price: 4,109,000₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle brown'></i>
-                                            <i className='bx bxs-circle red'></i>
-                                            <i className='bx bxs-circle green'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-sculpt-shoes-4MX0v0/DV7454-100">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -230,17 +164,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                     </div>
-                                    <div className="price">
-                                        Price 3,239,000₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle grey'></i>
-                                            <i className='bx bxs-circle blank'></i>
-                                            <i className='bx bxs-circle blank'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-07-shoes-VWCc04/DV0788-101">Buy  Now</a></button>
-                                    </div>
                                 </div>
                             </div>
                             <div className="best-p1">
@@ -255,17 +178,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        Price: 2,929,000₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle grey'></i>
-                                            <i className='bx bxs-circle red'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-07-shoe-HWWX9W/CT2302-100">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -287,17 +199,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                     </div>
-                                    <div className="price">
-                                        Price: 2,991,149₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle grey'></i>
-                                            <i className='bx bxs-circle black'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-mid-07-shoes-ZzCgrn/DV0806-100">Buy  Now</a></button>
-                                    </div>
                                 </div>
                             </div>
                             <div className="best-p1">
@@ -312,17 +213,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        Price: 2,991,149₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle blank'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                            <i className='bx bxs-circle brown'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-07-lv8-shoes-VqVnxG/DV0794-001">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -339,17 +229,6 @@ const index = () => {
                                         <i className='bx bxs-star'></i>
                                         <i className='bx bxs-star'></i>
                                     </div>
-                                    <div className="price">
-                                        Price: 2,753,149₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle blank'></i>
-                                            <i className='bx bxs-circle red'></i>
-                                            <i className='bx bxs-circle blue'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/air-force-1-07-shoes-KJhDMJ/DQ7569-102">Buy  Now</a></button>
-                                    </div>
                                 </div>
                             </div>
                             <div className="best-p1">
@@ -364,17 +243,6 @@ const index = () => {
                                         <i className='bx bx-star'></i>
                                         <i className='bx bx-star'></i>
                                         <i className='bx bx-star'></i>
-                                    </div>
-                                    <div className="price">
-                                        Price: 1,161,299₫
-                                        <div className="colors">
-                                            <i className='bx bxs-circle blank'></i>
-                                            <i className='bx bxs-circle grey'></i>
-                                            <i className='bx bxs-circle brown'></i>
-                                        </div>
-                                    </div>
-                                    <div className="buy-now">
-                                        <button><a href="https://www.nike.com/vn/t/force-1-lv8-2-shoes-XvN2rk/DV1624-001">Buy  Now</a></button>
                                     </div>
                                 </div>
                             </div>
@@ -395,7 +263,7 @@ const index = () => {
                                 <div className="date-news1">
                                     <p><i className='bx bxs-calendar'></i> 12 November 2023</p>
                                     <h4>Nike Air Max Pulse</h4>
-                                    <a href="https://www.nike.com/vn/t/air-max-pulse-shoes-V9B1C5/FD6409-002">read more</a>
+                                    <a href='/Shop'>MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -407,7 +275,7 @@ const index = () => {
                                 <div className="date-news2">
                                     <p><i className='bx bxs-calendar'></i> 17 November 2023</p>
                                     <h4>Nike Air Max 90</h4>
-                                    <a href="https://www.nike.com/vn/t/team-hustle-d-11-older-basketball-shoes-q4t8cZ/FJ7688-101" >read more</a>
+                                    <a href='/Shop'>MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -419,7 +287,7 @@ const index = () => {
                                 <div className="date-news3">
                                     <p><i className='bx bxs-calendar'></i> 26 November 2023</p>
                                     <h4>Nike Air Max 90</h4>
-                                    <a href="https://www.nike.com/vn/t/air-max-90-shoes-kRsBnD/DM0029-102" >read more</a>
+                                    <a href='/Shop'>MORE</a>
                                 </div>
                             </div>
                         </div>

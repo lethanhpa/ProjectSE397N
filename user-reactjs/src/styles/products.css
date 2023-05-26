@@ -49,6 +49,7 @@ body {
 .product-item {
     max-width: 250px;
     max-height: 370px;
+    margin-bottom: 48px;
 }
 
 .product-img {
@@ -57,14 +58,21 @@ body {
 }
 
 .product-title {
-    margin-top: 6px;
+    margin-top: 12px;
     color: #9e3500;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
+}
+
+.product-description {
+    color: #878787;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
 .product-price {
     margin-top: 10px;
+    color: #000;
 }
 
 .product-button button {

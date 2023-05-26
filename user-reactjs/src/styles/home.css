@@ -387,7 +387,8 @@ body {
 
 .img-content p {
     font-size: 1.6rem;
-    color: #fff;
+    color: #ff251d;
+    margin-bottom: 16px;
 }
 
 .img-content button {
@@ -470,7 +471,8 @@ body {
 
 .img-content2 p {
     font-size: 1.6rem;
-    color: #fff;
+    color: #ff251d;
+    margin-bottom: 16px;
 }
 
 .img-content2 a {
@@ -553,7 +555,8 @@ body {
 
 .img-content3 p {
     font-size: 1.6rem;
-    color: #fff;
+    color: #ff251d;
+    margin-bottom: 16px;
 }
 
 .img-content3 a {
@@ -650,7 +653,7 @@ body {
 
 .seller .best-p1 {
     width: 250px;
-    height: 370px;
+    height: 320px;
 }
 
 .seller .best-p1 img {
@@ -667,6 +670,9 @@ body {
 
 .name-of-p {
     padding-top: 15px;
+    text-align: center;
+    font-weight: 450;
+    color: #c11e18;
 }
 
 .seller .best-p1 .price .colors input[type="radio"] {
@@ -674,7 +680,7 @@ body {
     background-color: #000;
 }
 
-.best-seller .buy-now a {
+.best-seller a {
     text-decoration: none;
     color: var(--white);
 }
@@ -683,7 +689,7 @@ body {
     color: #f05e8a;
 }
 
-.best-seller .buy-now button,
+.best-seller button,
 .best-seller .add-cart button {
     padding: 10px 15px;
     margin-top: 5px;
@@ -699,13 +705,13 @@ body {
     transition: 0.5s;
 }
 
-.best-seller .buy-now button:hover,
+.best-seller button:hover,
 .best-seller .add-cart button:hover {
     background-color: var(--white);
     font-weight: 600;
 }
 
-.best-seller .buy-now button:hover a,
+.best-seller button:hover a,
 .best-seller .add-cart button:hover a {
     color: #f05e8a;
 }
@@ -904,6 +910,7 @@ body {
 
 .l-news1 .news1-conte .date-news1 a:hover {
     color: var(--black);
+    cursor: pointer;
 }
 
 .l-news2 .news2-conte .date-news2 p {
@@ -945,6 +952,7 @@ body {
 
 .l-news2 .news2-conte .date-news2 a:hover {
     color: var(--black);
+    cursor: pointer;
 }
 
 .l-news3 .news3-conte .date-news3 p {
@@ -986,6 +994,7 @@ body {
 
 .l-news3 .news3-conte .date-news3 a:hover {
     color: var(--black);
+    cursor: pointer;
 }
 
 

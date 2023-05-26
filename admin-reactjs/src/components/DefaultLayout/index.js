@@ -6,33 +6,39 @@ import {
     DropboxOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
+import logo from "../image/logo.png"
 import { useNavigate } from 'react-router-dom';
+import { Header } from 'antd/es/layout/layout';
 
 const { Content, Footer, Sider } = Layout;
 
 const items = [
     {
-        label: 'Home',
+        label: 'Trang Chủ',
         key: '',
         icon: <HomeOutlined />,
     },
     {
-        label: 'Manager Customers',
+        label: 'Quản Lý Khách Hàng',
         key: 'manageCustomers',
+        style: { marginTop: '25px' },
         icon: <UserOutlined />,
     },
     {
-        label: 'Manager Employees',
+        label: 'Quản Lý Nhân Viên',
+        style: { marginTop: '25px' },
         key: 'manageEmployees',
         icon: <UserOutlined />,
     },
     {
-        label: 'Manager Order',
+        label: 'Quản Lý Hóa Đơn',
+        style: { marginTop: '25px' },
         key: 'manageOrders',
         icon: <FileDoneOutlined />,
     },
     {
-        label: 'Manager Products',
+        label: 'Quản Lý Sản Phẩm',
+        style: { marginTop: '25px' },
         key: 'manageProducts',
         icon: <DropboxOutlined />,
     },
@@ -40,7 +46,6 @@ const items = [
 
 export default function DefaultLayout({ children }) {
     // eslint-disable-next-line react-hooks/rules-of-hooks
-    const [collapsed, setCollapsed] = useState(false);
     const [current, setCurrent] = useState('/');
 
     const navigate = useNavigate();
@@ -54,18 +59,9 @@ export default function DefaultLayout({ children }) {
             }}
         >
             <Sider
-                collapsible
-                collapsed={collapsed}
-                onCollapse={(value) => setCollapsed(value)}
-
+                width={202}
             >
-                <div
-                    style={{
-                        height: 32,
-                        margin: 16,
-                        background: "rgba(255, 255, 255, 0.2)",
-                    }}
-                />
+                <div style={{ color: "#129ECB", margin: "24px", fontSize: "32px", fontWeight: "700" }}><img style={{ width: "80px" }} src={logo} alt='' />YAME</div>
                 <Menu
                     theme="dark"
                     defaultSelectedKeys={["/"]}
@@ -80,6 +76,7 @@ export default function DefaultLayout({ children }) {
                 />
             </Sider>
             <Layout className="site-layout">
+                <Header style={{ color: "white", fontSize: '28px', fontWeight: '700', fontFamily: 'cursive' }} >YOU ARE MY EVERYTHING</Header>
                 <Content
                     style={{
                         margin: "0 16px",

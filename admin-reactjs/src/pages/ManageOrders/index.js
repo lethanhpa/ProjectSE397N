@@ -23,22 +23,22 @@ export default function ManageOrder() {
     return (
         <>
             <Table dataSource={data} rowKey="_id">
-                <Column title="Shipping Address" dataIndex="shippingAddress" key="shippingAddress" />
-                <Column title="Shipped Date" dataIndex="shippedDate" key="shippedDate" />
-                <Column title="Payment Type" dataIndex="paymentType" key="paymentType" />
-                <Column title="Status" dataIndex="status" key="status" />
-                <Column title="Customers" dataIndex="customer.fullName" key="customer.fullName" render={(_text, record) => {
+                <Column title="Địa chỉ giao hàng" dataIndex="shippingAddress" key="shippingAddress" />
+                <Column title="Ngày giao hàng" dataIndex="shippedDate" key="shippedDate" />
+                <Column title="Hình thức thanh toán" dataIndex="paymentType" key="paymentType" />
+                <Column title="Trạng thái" dataIndex="status" key="status" />
+                <Column title="Khách hàng" dataIndex="customer.fullName" key="customer.fullName" render={(_text, record) => {
                     return <span>{record.customer.lastName} {record.customer.firstName}</span>;
                 }} />
-                <Column title="Employees" dataIndex="employee.fullName" key="employee.fullName" render={(_text, record) => {
+                <Column title="Nhân viên" dataIndex="employee.fullName" key="employee.fullName" render={(_text, record) => {
                     return <span>{record.employee.lastName} {record.employee.firstName}</span>;
                 }} />
                 <Column title="Order Details" dataIndex="orderDetails" key="orderDetails" render={(_text, record) => {
                     return (
                         <span>
-                            Quantity: {record.orderDetails[0].quantity}
+                            Số lượng: {record.orderDetails[0].quantity}
                             <br />
-                            Product: {record.orderDetails[0].productId}
+                            Sản phẩm: {record.orderDetails[0].productId}
                         </span>
                     );
                 }} />
