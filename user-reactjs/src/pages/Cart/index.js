@@ -71,7 +71,7 @@ const Index = () => {
                                 <div className="card-right-top">
                                     <div className="card-right-text">
                                         <span>Subtotal</span>
-                                        <p>12,327,000₫</p>
+                                        <p>8,218,000₫</p>
                                     </div>
                                     <div className="card-right-text">
                                         <span>Estimated Delivery & Handling</span>
@@ -81,7 +81,7 @@ const Index = () => {
                                 <div className="card-right-bottom">
                                     <div className="card-right-text">
                                         <span>Total</span>
-                                        <p>12,327,000₫</p>
+                                        <p>8,218,000₫</p>
                                     </div>
                                 </div>
                                 <div className="card-right-button">

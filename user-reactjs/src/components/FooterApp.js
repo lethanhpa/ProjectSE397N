@@ -19,10 +19,10 @@ const FooterApp = () => {
                     </div>
                     <div className="content_3">
                         <h4>SHOPPING</h4>
-                        <a href="./contact.html">Contact Us</a>
+                        <a href="/#contact">Contact Us</a>
                         <a href="https://payment-method-sb.netlify.app/" >Payment Method</a>
-                        <a href="https://delivery-status-sb.netlify.app/" >Delivery</a>
-                        <a href="https://codepen.io/sandeshbodake/full/Jexxrv" >Return and Exchange</a>
+                        <a href="/" >Delivery</a>
+                        <a href="/" >Return and Exchange</a>
                     </div>
                     <div className="content_4">
                         <h4>NEWLETTER</h4>

@@ -17,7 +17,7 @@ const index = () => {
                             <div className="home_label">
                                 <p>A specialist label creating luxury essentials. Ethically crafted<br />with an unwavering commitment to exceptional quality.</p>
                             </div>
-                            <button><a href="/Shop">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
+                            <button><a href="/products">SHOP NOW</a><i className='bx bx-right-arrow-alt'></i></button>
                             <div className="home_social_icons">
                                 <a href="/"><i className='bx bxl-facebook'></i></a>
                                 <a href="/"><i className='bx bxl-twitter'></i></a>
@@ -33,21 +33,21 @@ const index = () => {
                             <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/650de059-d5d8-4372-8e07-072b3040ba69/air-jordan-1-mid-se-shoes-p48zQ5.png" alt="img" />
                             <div className="img-content">
                                 <p>Collections</p>
-                                <button><a href="/Shop">SHOP NOW</a></button>
+                                <button><a href="/products">SHOP NOW</a></button>
                             </div>
                         </div>
                         <div className="content2">
                             <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/42cba1bc-3a7b-44df-a026-3c416d1d80b2/tatum-1-st-louis-pf-basketball-shoes-LDFvBJ.png" alt="img" />
                             <div className="img-content2">
                                 <p>Shoes Spring</p>
-                                <button><a href="/Shop">SHOP NOW</a></button>
+                                <button><a href="/products">SHOP NOW</a></button>
                             </div>
                         </div>
                         <div className="content3">
                             <img src="https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/e5feafbc-8beb-4b91-9ffd-ed14a62e1a67/zion-2-pf-basketball-shoes-CH06Hd.png" alt="img" />
                             <div className="img-content3">
                                 <p>Accessories</p>
-                                <button><a href="/Shop">SHOP NOW</a></button>
+                                <button><a href="/products">SHOP NOW</a></button>
                             </div>
                         </div>
                     </div>
@@ -263,7 +263,7 @@ const index = () => {
                                 <div className="date-news1">
                                     <p><i className='bx bxs-calendar'></i> 12 November 2023</p>
                                     <h4>Nike Air Max Pulse</h4>
-                                    <a href='/Shop'>MORE</a>
+                                    <a href='/products'>MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +275,7 @@ const index = () => {
                                 <div className="date-news2">
                                     <p><i className='bx bxs-calendar'></i> 17 November 2023</p>
                                     <h4>Nike Air Max 90</h4>
-                                    <a href='/Shop'>MORE</a>
+                                    <a href='/products'>MORE</a>
                                 </div>
                             </div>
                         </div>
@@ -287,7 +287,7 @@ const index = () => {
                                 <div className="date-news3">
                                     <p><i className='bx bxs-calendar'></i> 26 November 2023</p>
                                     <h4>Nike Air Max 90</h4>
-                                    <a href='/Shop'>MORE</a>
+                                    <a href='/products'>MORE</a>
                                 </div>
                             </div>
                         </div>

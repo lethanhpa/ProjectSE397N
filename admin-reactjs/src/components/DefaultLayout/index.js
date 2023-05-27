@@ -31,7 +31,7 @@ const items = [
         icon: <UserOutlined />,
     },
     {
-        label: 'Quản Lý Hóa Đơn',
+        label: 'Quản Lý Đơn Hàng',
         style: { marginTop: '25px' },
         key: 'manageOrders',
         icon: <FileDoneOutlined />,

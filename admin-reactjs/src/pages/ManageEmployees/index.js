@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Button, Space, Table, message } from 'antd';
 import { DeleteOutlined } from "@ant-design/icons";
 import axios from "../../libraries/axiosClient.js";
+import Moment from "moment";
 const { Column } = Table;
 const apiName = "/employees";
 
@@ -25,7 +26,9 @@ export default function ManageEmployees() {
                 <Column title="Họ" dataIndex="lastName" key="lastName" />
                 <Column title="Tên" dataIndex="firstName" key="firstName" />
                 <Column title="Email" dataIndex="email" key="email" />
-                <Column title="Ngày sinh" dataIndex="birthday" key="birthday" />
+                <Column title="Ngày sinh" dataIndex="birthday" key="birthday" render={(text) => {
+                    return <span>{Moment(text).format("DD/MM/YYYY")}</span>;
+                }} />
                 <Column title="Số điện thoại" dataIndex="phoneNumber" key="phoneNumber" />
                 <Column title="Địa chỉ" dataIndex="address" key="address" />
                 <Column
