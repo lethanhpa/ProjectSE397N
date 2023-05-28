@@ -19,10 +19,10 @@ const Login = (props) => {
 
     if (email === "admin@gmail.com" && password === "123456") {
       localStorage.setItem('isLogin', 'true');
-      alert("Login successful!!!");
+      alert("Đăng nhập thành công!!!");
       setIsLogin(true);
     } else {
-      alert("Incorrect username or password");
+      alert("Sai tài khoản hoặc mật khẩu");
     }
   };
 

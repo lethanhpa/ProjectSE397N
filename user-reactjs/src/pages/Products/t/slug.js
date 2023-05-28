@@ -47,7 +47,7 @@ function ProductDetail() {
                             <div className="size">EU 45</div>
                         </div>
                         <div className="productDetail-add-cart">
-                            <Link to="/cart"><button>Add To Cart</button></Link>
+                            <Link to="/Auth"><button>Add To Cart</button></Link>
                         </div>
                     </div>
                 </div >

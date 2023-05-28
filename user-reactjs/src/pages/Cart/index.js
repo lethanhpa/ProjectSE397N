@@ -19,12 +19,11 @@ const Index = () => {
                                     <div className="cart-item-wrap">
                                         <div className="card-wrap-info">
                                             <div className="cart-product-img">
-                                                <img src="https://secure-images.nike.com/is/image/DotCom/FB7703_100?align=0,1&cropN=0,0,0,0&resMode=sharp&bgc=f5f5f5&wid=150&fmt=jpg" alt="" />
+                                                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/13721f24-2774-443e-a27d-998d2c6be068/air-force-1-07-flyease-shoes-LKXPhZ.png" alt="" />
                                             </div>
                                             <div className="cart-product-info">
-                                                <div className="cart-product-name">Nike Pegasus 40 Premium</div>
-                                                <div className="card-product-type">Women's Road Running Shoes</div>
-                                                <div className="card-product-color">Black/White/Bright Mandarin/Multi-Color</div>
+                                                <div className="cart-product-name">Nike Air Force 1 '07 FlyEase</div>
+                                                <div className="card-product-type">Men's Shoes</div>
                                                 <div style={{ display: 'flex', alignItems: 'center', gap: '0 15px' }}>
                                                     <div className="sizeQty">
                                                         <span>Size</span>
@@ -53,7 +52,7 @@ const Index = () => {
                                             </div>
                                         </div>
                                         <div className="cart-product-price">
-                                            <span>8,218,000₫</span>
+                                            <span>3,077,050đ</span>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +70,7 @@ const Index = () => {
                                 <div className="card-right-top">
                                     <div className="card-right-text">
                                         <span>Subtotal</span>
-                                        <p>8,218,000₫</p>
+                                        <p>3,077,050đ</p>
                                     </div>
                                     <div className="card-right-text">
                                         <span>Estimated Delivery & Handling</span>
@@ -81,7 +80,7 @@ const Index = () => {
                                 <div className="card-right-bottom">
                                     <div className="card-right-text">
                                         <span>Total</span>
-                                        <p>8,218,000₫</p>
+                                        <p>3,077,050đ</p>
                                     </div>
                                 </div>
                                 <div className="card-right-button">

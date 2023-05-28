@@ -22,10 +22,6 @@ const productSchema = Schema(
       slug: 'name',
       unique: true
     }
-  },
-  {
-    versionKey: false,
-    timestamps: true
   }
 );
 productSchema.pre("create", function (next) {

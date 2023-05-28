@@ -98,8 +98,7 @@ body {
     color: #000;
 }
 
-.card-product-type,
-.card-product-color {
+.card-product-type {
     color: #757575;
 }
 
@@ -118,6 +117,7 @@ body {
 
 .cart-product-price span {
     font-size: 18px;
+    margin-right: 64px;
 }
 
 .card-icon .icon {
