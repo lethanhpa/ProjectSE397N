@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import styles from './Login.module.css';
+import { message } from 'antd';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = (props) => {
   const { setIsLogin } = props;
@@ -19,15 +22,16 @@ const Login = (props) => {
 
     if (email === "admin@gmail.com" && password === "123456") {
       localStorage.setItem('isLogin', 'true');
-      alert("Đăng nhập thành công!!!");
+      message.success("Đăng nhập thành công!!!");
+      toast.success("Đăng nhập thành công!!!");
       setIsLogin(true);
     } else {
-      alert("Sai tài khoản hoặc mật khẩu");
+      toast.error("Sai tài khoản hoặc mật khẩu!!!");
     }
   };
 
   return (
-    <form className={styles.loginForm} onSubmit={handleSubmit}>
+    <form className={styles.loginForm}>
       <h2>Login</h2>
       <div className={styles.formGroup}>
         <label htmlFor="email">Email</label>
@@ -47,7 +51,7 @@ const Login = (props) => {
           onChange={handlePasswordChange}
         />
       </div>
-      <button type="submit" className={styles.submitButton}>Login</button>
+      <button onClick={handleSubmit} type="submit" className={styles.submitButton}>Login</button><ToastContainer />
     </form>
   );
 };

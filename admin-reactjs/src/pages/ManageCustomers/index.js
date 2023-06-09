@@ -8,7 +8,7 @@ const apiName = "/customers";
 
 export default function ManageCustomers() {
     const [data, setData] = useState([]);
-    const [refresh, setRefresh] = React.useState(0);
+    const [refresh, setRefresh] = useState(0);
     useEffect(() => {
         axios
             .get(apiName)

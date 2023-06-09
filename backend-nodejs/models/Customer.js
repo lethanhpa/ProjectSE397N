@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const { Schema, model } = mongoose;
 const mongooseLeanVirtuals = require('mongoose-lean-virtuals');
+const { Schema, model } = mongoose;
 const bcrypt = require('bcryptjs');
 // Mongoose Datatypes:
 // https://mongoosejs.com/docs/schematypes.html
@@ -23,7 +23,6 @@ const customerSchema = new Schema({
     },
     required: [true, 'email is required'],
   },
-  avatar: { type: String },
   password: { type: String, require: true },
   phoneNumber: {
     type: String,
@@ -41,7 +40,7 @@ const customerSchema = new Schema({
 },
   {
     versionKey: false,
-    timestamps: true,
+    timestamps: true
   });
 
 // Virtuals

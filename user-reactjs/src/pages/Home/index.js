@@ -1,7 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "../../styles/home.css"
+import axios from "../../libraries/axiosClient.js";
+const apiName = "/products";
 
 const index = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    const [product, setProduct] = useState([]);
+
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    useEffect(() => {
+        axios
+            .get(apiName)
+            .then((response) => {
+                const { data } = response;
+                setProduct(data);
+            })
+            .catch((err) => {
+                console.error(err);
+            });
+    }, []);
     return (
         <>
             <body>

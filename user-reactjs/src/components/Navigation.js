@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "../images/logo.png"
 import { Link } from "react-router-dom"
-import { ShoppingCartOutlined, HomeOutlined, ShopOutlined, ContactsOutlined } from "@ant-design/icons";
+import { ShoppingCartOutlined, HomeOutlined, ShopOutlined, UserOutlined, UserAddOutlined } from "@ant-design/icons";
 
 const Navigation = () => {
     return (
@@ -16,10 +16,10 @@ const Navigation = () => {
                     </div>
                     <ul className="menu-items">
                         <li><Link to="/">Home <HomeOutlined /></Link></li>
-                        <li><Link to="/products">Products <ShopOutlined /></Link></li>
-                        <li><a href='/#contact'>Contact <ContactsOutlined /></a></li>
+                        <li><Link to="/products">Shop <ShopOutlined /></Link></li>
                         <li><Link to='/cart'>Cart <ShoppingCartOutlined /></Link></li>
-                        <li><Link to="/auth">SIGN IN / SIGN UP</Link></li>
+                        <li><Link to="/signin">Sign In<UserOutlined /></Link></li>
+                        <li><Link to="/signup">Sign Up <UserAddOutlined /></Link></li>
                     </ul>
                     <div className="logo">
                         <img style={{ width: '58px' }} src={logo} alt="logo" />
