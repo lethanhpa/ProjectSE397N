@@ -103,21 +103,19 @@ const Index = () => {
                             placeholder='Passwords must be at least 6 characters'
                         />
                     </Form.Item>
-                    {token && (
-                        <Form.Item
-                            wrapperCol={{
-                                offset: 5,
-                            }}
-                        >
-                            <Button onClick={handleSubmit} type="submit" htmlType='submit' className={Styles.btn}>
-                                Sign In
-                            </Button><ToastContainer />
-                            <br />
-                            <i>
-                                Not a Member? <Link to="/signup">Join Us.</Link>
-                            </i>
-                        </Form.Item>
-                    )}
+                    <Form.Item
+                        wrapperCol={{
+                            offset: 5,
+                        }}
+                    >
+                        <Button onClick={handleSubmit} type="submit" htmlType='submit' className={Styles.btn}>
+                            Sign In
+                        </Button><ToastContainer />
+                        <br />
+                        <i>
+                            Not a Member? <Link to="/signup">Join Us.</Link>
+                        </i>
+                    </Form.Item>
                 </Form>
             </div >
         </>

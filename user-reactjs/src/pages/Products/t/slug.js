@@ -7,6 +7,8 @@ import "../../../styles/productDetail.css"
 
 function ProductDetail() {
     const [product, setProduct] = useState('');
+    const [selectedSize, setSelectedSize] = useState("")
+
     const { slug } = useParams();
     useEffect(() => {
         const fetchProduct = async () => {
@@ -31,23 +33,29 @@ function ProductDetail() {
                     <div className="productDetail-information">
                         <div className="productDetail-name">{product.name}</div>
                         <div className="productDetail-description">{product.description}</div>
-                        <div className="productDetail-price">{numeral(product.price).format("0,0")}đ</div>
-                        <div className="productDetail-discount">Sale off: {product.discount}%</div>
-                        <div className="productDetail-total">Total: {numeral(product.total).format("0,0")}đ</div>
+                        {product.discount > 0 ? (
+                            <div>
+                                <div className="productDetail-discount">Sale off: {product.discount}%</div>
+                                <div style={{ display: 'flex' }}>
+                                    <div className="productDetail-price-discount">{numeral(product.price).format("0,0")}đ</div>
+                                    <div className="productDetail-total">{numeral(product.total).format("0,0")}đ</div>
+                                </div>
+                            </div>
+                        ) : (<div className="productDetail-price">{numeral(product.price).format("0,0")}đ</div>)}
                         <div>Select Size</div>
                         <div className="list-size">
-                            <div className="size">EU 37</div>
-                            <div className="size">EU 38</div>
-                            <div className="size">EU 39</div>
-                            <div className="size">EU 40</div>
-                            <div className="size">EU 41</div>
-                            <div className="size">EU 42</div>
-                            <div className="size">EU 43</div>
-                            <div className="size">EU 44</div>
-                            <div className="size">EU 45</div>
+                            <option className="size">EU 37</option>
+                            <option className="size">EU 38</option>
+                            <option className="size">EU 39</option>
+                            <option className="size">EU 40</option>
+                            <option className="size">EU 41</option>
+                            <option className="size">EU 42</option>
+                            <option className="size">EU 43</option>
+                            <option className="size">EU 44</option>
+                            <option className="size">EU 45</option>
                         </div>
                         <div className="productDetail-add-cart">
-                            <Link to="/Auth"><button>Add To Cart</button></Link>
+                            <Link to="/cart"><button>Add To Cart</button></Link>
                         </div>
                     </div>
                 </div >

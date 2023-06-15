@@ -46,6 +46,12 @@
     margin-bottom: 16px;
 }
 
+.productDetail-price-discount {
+    font-size: 22px;
+    padding-right: 16px;
+    text-decoration: line-through 1.25px solid #000000;
+}
+
 .productDetail-add-cart button {
     width: 100%;
     padding: 18px 24px;
@@ -69,14 +75,19 @@
     gap: 7px;
 }
 
+
 .size {
     border: 1px solid #b6b6b6;
     font-size: 18px;
-    border-radius: 8px;
+    border-radius: 5px;
     margin: 6px;
     text-align: center;
     width: 80px;
     cursor: pointer;
+}
+
+.selected {
+    border: 2px solid #000000;
 }
 
 .size:hover {

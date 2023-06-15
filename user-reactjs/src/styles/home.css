@@ -659,6 +659,7 @@ body {
 .seller .best-p1 img {
     height: 250px;
     width: 250px;
+    object-fit: cover;
 }
 
 .seller .best-p1 .price {
@@ -878,16 +879,16 @@ body {
 }
 
 .l-news1 .news1-conte .date-news1 h4 {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 300;
     padding-bottom: 15px;
 }
 
 .l-news1 .news1-conte .date-news1 a {
     text-decoration: none;
     text-align: center;
-    padding: 0 50px;
+    padding: 0 80px;
     color: var(--primary-color);
     position: relative;
     font-weight: 600;
@@ -898,7 +899,7 @@ body {
     position: absolute;
     background: #ff3c78;
     height: 3px;
-    width: 100%;
+    width: 200px;
     left: 0;
     bottom: -10px;
     transition: 0.3s;
@@ -1360,4 +1361,62 @@ iframe {
     .form .form-details input[type="text"] {
         margin-bottom: 0px;
     }
+}
+
+.App {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.card {
+    border-radius: 8px;
+    height: 550px;
+    color: #000000;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.card-top img {
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-bottom h1 {
+    font-size: 22px;
+    margin: 12px 0 12px 20px;
+    font-weight: 400;
+}
+
+.card-bottom {
+    margin: 10px 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.category {
+    position: relative;
+}
+
+.category::before {
+    content: '';
+    background: rgb(255, 61, 61);
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    height: 2px;
 }

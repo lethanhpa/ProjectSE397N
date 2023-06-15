@@ -145,7 +145,7 @@ router.post("/", function (req, res) {
     body: yup.object({
       name: yup.string().required(),
       price: yup.number().positive().required(),
-      discount: yup.number().positive().max(50),
+      discount: yup.number().max(50),
       img: yup.string(),
       description: yup.string(),
     }),
