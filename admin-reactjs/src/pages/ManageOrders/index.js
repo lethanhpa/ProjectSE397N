@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Button, Space, Table, message } from 'antd';
 import { DeleteOutlined } from "@ant-design/icons";
+import numeral from "numeral";
+import Moment from "moment";
 import axios from "../../libraries/axiosClient.js";
 const { Column } = Table;
 const apiName = "/orders";
@@ -24,7 +26,10 @@ export default function ManageOrder() {
         <>
             <Table dataSource={data} rowKey="_id">
                 <Column title="Địa chỉ giao hàng" dataIndex="shippingAddress" key="shippingAddress" />
-                <Column title="Ngày giao hàng" dataIndex="shippedDate" key="shippedDate" />
+                <Column title="Ngày giao hàng" dataIndex="shippedDate" key="shippedDate"
+                    render={(text) => {
+                        return <span>{Moment(text).format("DD/MM/YYYY")}</span>;
+                    }} />
                 <Column title="Hình thức thanh toán" dataIndex="paymentType" key="paymentType" />
                 <Column title="Trạng thái" dataIndex="status" key="status" />
                 <Column title="Khách hàng" dataIndex="customer.fullName" key="customer.fullName" render={(_text, record) => {
@@ -38,7 +43,9 @@ export default function ManageOrder() {
                         <span>
                             Số lượng: {record.orderDetails[0].quantity}
                             <br />
-                            Sản phẩm: {record.orderDetails[0].productId}
+                            Mã sản phẩm: {record.orderDetails[0].productId}
+                            <br />
+                            Giá: {numeral(record.orderDetails[0].price * record.orderDetails[0].quantity).format("0,0")}đ
                         </span>
                     );
                 }} />
